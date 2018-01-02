@@ -13,18 +13,20 @@ namespace Rome.Controllers
             return View();
         }
 
-        public ActionResult About()
+        //public ActionResult About()
+        //{
+        //    ViewBag.Message = "Your application description page.";
+
+        //    return View();
+        //}
+
+        [HttpPost]
+        public ActionResult PostContact(Contact contact)
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = $"Thanks {contact.Name} for sending me a message";
+            ViewBag.MessageSent = true;
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View("Index");
         }
     }
 }

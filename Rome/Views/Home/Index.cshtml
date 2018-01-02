@@ -1,31 +1,253 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    Layout = null;
 }
+<!DOCTYPE HTML>
+<!--
+    Prologue by HTML5 UP
+    html5up.net | ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Cermics and 2D by Romelia Lopez Diaz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+</head>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    @{ if (ViewBag.MessageSent != null && ViewBag.MessageSent) {
+            <script>
+                location.hash = "#messageSent";
+                $('#messageSent').click();
+                $('#messageSent').show();
+            </script>
+            }
+      }
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<body>
+
+    <!-- Header -->
+    <div id="header">
+
+        <div class="top">
+
+            <!-- Logo -->
+            <div id="logo">
+                <span class="image avatar48"><img src="/images/avatar.jpg" alt="" /></span>
+                <h1 id="title">Romelia Lopez Diaz</h1>
+                <p>Artist</p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <!--
+
+                    Prologue's nav expects links in one of two formats:
+
+                    1. Hash link (scrolls to a different section within the page)
+
+                       <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                    2. Standard link (sends the user to another page/site)
+
+                       <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+                -->
+                <ul>
+                    <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                    <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                    <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                    <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                    <li style="display:none;"><a href="#messageSent" id="message-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Message Sent</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="bottom">
+
+            <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+
+        </div>
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Intro -->
+        <section id="top" class="one dark cover">
+            <div class="container">
+
+                <header>
+                    <h2 class="alt">
+                        Hi! I'm <strong>Romelia Lopez Diaz</strong>, a NZ based Argentinian artist<br />
+                        specializing in Ceramics and 2D art.
+                    </h2>
+                    <p>
+                        Check out my portfolio<br />
+                        and let me know what you think - or make a purchase!
+                    </p>
+                </header>
+
+                <footer>
+                    <a href="#portfolio" class="button scrolly">View Portfolio</a>
+                </footer>
+
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="two">
+            <div class="container">
+
+                <header>
+                    <h2>Portfolio</h2>
+                </header>
+
+                <p>
+                    This is a collection of my works over the past few years.
+                </p>
+
+                <div class="row">
+                    <div class="4u 12u$(mobile)">
+                        <article class="item">
+                            <a href="#" class="image fit"><img src="/images/pic02.jpg" alt="" /></a>
+                            <header>
+                                <h3>Ipsum Feugiat</h3>
+                            </header>
+                        </article>
+                        <article class="item">
+                            <a href="#" class="image fit"><img src="/images/pic03.jpg" alt="" /></a>
+                            <header>
+                                <h3>Rhoncus Semper</h3>
+                            </header>
+                        </article>
+                    </div>
+                    <div class="4u 12u$(mobile)">
+                        <article class="item">
+                            <a href="#" class="image fit"><img src="/images/pic04.jpg" alt="" /></a>
+                            <header>
+                                <h3>Magna Nullam</h3>
+                            </header>
+                        </article>
+                        <article class="item">
+                            <a href="#" class="image fit"><img src="/images/pic05.jpg" alt="" /></a>
+                            <header>
+                                <h3>Natoque Vitae</h3>
+                            </header>
+                        </article>
+                    </div>
+                    <div class="4u$ 12u$(mobile)">
+                        <article class="item">
+                            <a href="#" class="image fit"><img src="/images/pic06.jpg" alt="" /></a>
+                            <header>
+                                <h3>Dolor Penatibus</h3>
+                            </header>
+                        </article>
+                        <article class="item">
+                            <a href="#" class="image fit"><img src="/images/pic07.jpg" alt="" /></a>
+                            <header>
+                                <h3>Orci Convallis</h3>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="three">
+            <div class="container">
+
+                <header>
+                    <h2>About Me</h2>
+                </header>
+
+                <a href="#" class="image featured"><img src="/images/pic08.jpg" alt="" /></a>
+
+                <p>
+                    An Argentinian native, transplanted to New Zealand, a potter, sketcher, mother.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="four">
+            <div class="container">
+
+                <header>
+                    <h2>Contact</h2>
+                </header>
+
+                <p>
+                    If you liked my work and would like to let me know, or want to purchase something or display in a gallery.
+                    Please send me a message below.
+                </p>
+
+                <form method="post" action="/Home/PostContact">
+                    <div class="row">
+                        <div class="6u 12u$(mobile)"><input type="text" name="Name" placeholder="Name" /></div>
+                        <div class="6u$ 12u$(mobile)"><input type="text" name="Email" placeholder="Email" /></div>
+                        <div class="12u$">
+                            <textarea name="Message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="12u$">
+                            <input type="submit" value="Send Message" />
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+
+        <section id="messageSent" class="five" >
+            <div class="container">
+
+                <header>
+                    <h2>Your message has been sent!</h2>
+                </header>
+
+                <p>
+                    @ViewBag.Message
+                </p>
+
+            </div>
+        </section>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+    <!-- Footer -->
+    <div id="footer">
+
+        <!-- Copyright -->
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+
     </div>
-</div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/jquery.scrollzer.min.js"></script>
+    <script src="/assets/js/skel.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="/assets/js/main.js"></script>
+
+</body>
+</html>
