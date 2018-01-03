@@ -2154,7 +2154,7 @@
 
 			#main > section.dark {
 				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: #222729;
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2162,18 +2162,18 @@
 				}
 
 				#main > section.dark strong {
-					color: #fff;
+					color: #222729;
 					border-color: inherit;
 				}
 
-				#main > section.dark a {
-					color: #fff;
-					border-color: inherit;
-				}
+                #main > section.dark a {
+                    color: #222729;
+                    border-color: inherit;
+                }
 
-					#main > section.dark a:hover {
-						border-bottom-color: rgba(255, 255, 255, 0);
-					}
+                    #main > section.dark a:hover {
+                        border-bottom-color: #222729;
+                    }
 
 			#main > section.cover {
 				padding: 6em 0;
@@ -2182,7 +2182,7 @@
 			}
 
 			#main > section.one {
-				background-color: #81918E;
+				background-color: #222629;
 				background-image: url("../../images/banner.jpg");
 			}
 
